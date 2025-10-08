@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="universidad">
+  <ClassDiagramComponents>
+    <Class name="Alumno" package="" visibility="public" xPosition="26.0" yPosition="34.0">
+      <Fields>
+        <Field name="idAlumno" type="int" visibility="private"/>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="nombre" type="string" visibility="private"/>
+        <Field name="fechaNacimiento" type="LocalDate" visibility="private"/>
+        <Field name="estado" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Materia" package="" visibility="public" xPosition="763.0" yPosition="63.0">
+      <Fields>
+        <Field name="idMateria" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Inscripcion" package="" visibility="public" xPosition="402.0" yPosition="77.0">
+      <Fields>
+        <Field name="idInscripcion" type="int" visibility="private"/>
+        <Field name="idAlumno" type="int" visibility="private"/>
+        <Field name="idMateria" type="int" visibility="private"/>
+        <Field name="fecha" type="int" visibility="private"/>
+        <Field name="nota" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="Materia" target="Inscripcion" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="Tiene" source="Alumno" target="Inscripcion" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
