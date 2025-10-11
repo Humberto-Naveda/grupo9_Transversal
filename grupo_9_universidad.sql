@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-10-2025 a las 15:41:10
+-- Tiempo de generación: 11-10-2025 a las 22:53:45
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -38,6 +38,18 @@ CREATE TABLE `alumno` (
   `estado` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `alumno`
+--
+
+INSERT INTO `alumno` (`id_alumno`, `dni`, `nombre`, `apellido`, `fecha_nacimiento`, `estado`) VALUES
+(1, 31273939, 'Humberto', 'Naveda', '1984-12-01', 1),
+(2, 22999666, 'Exequiel', 'Muños', '2002-09-15', 1),
+(3, 44665888, 'Saul', 'Mendoza', '2000-05-10', 1),
+(4, 24888555, 'Joaquin', 'Sosa', '2006-08-30', 1),
+(5, 20555888, 'Emiliano', 'Miranda', '2001-05-20', 1),
+(6, 33333333, 'De prueba', 'Alumno', '2011-10-06', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -64,6 +76,16 @@ CREATE TABLE `materia` (
   `semestre` int(11) NOT NULL,
   `estado` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `materia`
+--
+
+INSERT INTO `materia` (`id_materia`, `nombre`, `semestre`, `estado`) VALUES
+(1, 'Matematica', 1, 1),
+(2, 'Ingles', 1, 1),
+(3, 'Laboratorio 1', 2, 1),
+(4, 'Web1', 2, 1);
 
 --
 -- Índices para tablas volcadas
@@ -97,7 +119,7 @@ ALTER TABLE `materia`
 -- AUTO_INCREMENT de la tabla `alumno`
 --
 ALTER TABLE `alumno`
-  MODIFY `id_alumno` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_alumno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `inscripcion`
@@ -109,7 +131,7 @@ ALTER TABLE `inscripcion`
 -- AUTO_INCREMENT de la tabla `materia`
 --
 ALTER TABLE `materia`
-  MODIFY `id_materia` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_materia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

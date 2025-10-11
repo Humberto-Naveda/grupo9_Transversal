@@ -6,10 +6,11 @@ import java.util.logging.Logger;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 
 public class Conexion {
-    private String bd; //nombre de la base de datos
+  private String bd; //nombre de la base de datos
     private String url;
     private String user;
     private String password;
@@ -39,5 +40,6 @@ public class Conexion {
         }
         return conn;
     }
+    
     
 }
