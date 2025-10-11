@@ -18,7 +18,7 @@ public class Test {
 //        AlumnoData alum = new AlumnoData(conn);
 //        MateriaData mat = new MateriaData(conn);
         
-//        Alumno alumno1 = new Alumno(31273939,"Naveda","Humberto",LocalDate.of(1984,12,1),true);
+//        Alumno alumno1 = new Alumno(20000000,"Naveda","Humberto",LocalDate.of(1984,12,1),true);
 //        Alumno alumno2 = new Alumno(22999666,"Muños","Exequiel",LocalDate.of(2002, 9, 15),true);
 //        Alumno alumno3 = new Alumno(44665888,"Mendoza","Saul",LocalDate.of(2000, 5, 10),true);
 //        Alumno alumno4 = new Alumno(24888555,"Sosa","Joaquin",LocalDate.of(2006,8, 30),true);

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-10-2025 a las 22:53:45
+-- Tiempo de generación: 11-10-2025 a las 23:32:28
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -43,7 +43,7 @@ CREATE TABLE `alumno` (
 --
 
 INSERT INTO `alumno` (`id_alumno`, `dni`, `nombre`, `apellido`, `fecha_nacimiento`, `estado`) VALUES
-(1, 31273939, 'Humberto', 'Naveda', '1984-12-01', 1),
+(1, 30200900, 'Humberto', 'Naveda', '1984-12-01', 1),
 (2, 22999666, 'Exequiel', 'Muños', '2002-09-15', 1),
 (3, 44665888, 'Saul', 'Mendoza', '2000-05-10', 1),
 (4, 24888555, 'Joaquin', 'Sosa', '2006-08-30', 1),
