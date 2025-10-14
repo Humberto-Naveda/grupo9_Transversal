@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-10-2025 a las 01:01:35
+-- Tiempo de generación: 15-10-2025 a las 01:12:43
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -59,7 +59,7 @@ INSERT INTO `alumno` (`id_alumno`, `dni`, `nombre`, `apellido`, `fecha_nacimient
 CREATE TABLE `inscripcion` (
   `id_inscripcion` int(11) NOT NULL,
   `nota` int(11) NOT NULL,
-  `anio` int(11) NOT NULL,
+  `año` int(11) NOT NULL,
   `id_alumno` int(11) NOT NULL,
   `id_materia` int(11) NOT NULL,
   `estado` tinyint(1) NOT NULL
