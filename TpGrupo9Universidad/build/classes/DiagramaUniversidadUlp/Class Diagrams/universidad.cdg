@@ -27,7 +27,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="Inscripcion" package="" visibility="public" xPosition="402.0" yPosition="77.0">
+    <Class name="Inscripcion" package="" visibility="public" xPosition="408.0" yPosition="95.0">
       <Fields>
         <Field name="idInscripcion" type="int" visibility="private"/>
         <Field name="idAlumno" type="int" visibility="private"/>
@@ -42,7 +42,7 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="tiene" source="Materia" target="Inscripcion" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
-    <HasRelation name="Tiene" source="Alumno" target="Inscripcion" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="Materia" source="Inscripcion" target="Materia" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Alumno" source="Inscripcion" target="Alumno" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
