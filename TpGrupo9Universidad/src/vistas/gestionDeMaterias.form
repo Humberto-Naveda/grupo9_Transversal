@@ -31,7 +31,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jbGuardar" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="JB_guardar" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                       <Component id="jLabel5" min="-2" pref="59" max="-2" attributes="0"/>
@@ -45,23 +45,23 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jtfCodigo" min="-2" pref="145" max="-2" attributes="0"/>
+                          <Component id="JTF_idmateria" min="-2" pref="145" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jbEliminar" min="-2" max="-2" attributes="0"/>
+                              <Component id="JB_eliminar" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jbModificar" min="-2" max="-2" attributes="0"/>
+                              <Component id="JB_modificar" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jbBuscar" min="-2" max="-2" attributes="0"/>
-                          <Component id="jbSalirDeMaterias" min="-2" max="-2" attributes="0"/>
+                          <Component id="JB_buscar" min="-2" max="-2" attributes="0"/>
+                          <Component id="JB_salir" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="jrbEstado" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jtfNombreMateria" alignment="0" pref="145" max="32767" attributes="0"/>
-                      <Component id="jtfAnio" alignment="0" max="32767" attributes="0"/>
+                      <Component id="JRB_estado" alignment="0" max="32767" attributes="0"/>
+                      <Component id="JTF_nombre" alignment="0" pref="145" max="32767" attributes="0"/>
+                      <Component id="JTF_semestre" alignment="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="28" max="32767" attributes="0"/>
@@ -77,31 +77,31 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jtfCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="JTF_idmateria" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jbBuscar" min="-2" max="-2" attributes="0"/>
+                  <Component id="JB_buscar" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                  <Component id="jtfNombreMateria" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JTF_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                  <Component id="jtfAnio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JTF_semestre" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                  <Component id="jrbEstado" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JRB_estado" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jbGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jbEliminar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jbModificar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jbSalirDeMaterias" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JB_guardar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JB_eliminar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JB_modificar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JB_salir" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="68" max="32767" attributes="0"/>
           </Group>
@@ -132,58 +132,58 @@
         <Property name="text" type="java.lang.String" value="Semestre :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jbGuardar">
+    <Component class="javax.swing.JButton" name="JB_guardar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Guardar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbGuardarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JB_guardarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jbEliminar">
+    <Component class="javax.swing.JButton" name="JB_eliminar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Eliminar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbEliminarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JB_eliminarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jbModificar">
+    <Component class="javax.swing.JButton" name="JB_modificar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Modificar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbModificarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JB_modificarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jbSalirDeMaterias">
+    <Component class="javax.swing.JButton" name="JB_salir">
       <Properties>
         <Property name="text" type="java.lang.String" value="Salir"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbSalirDeMateriasActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JB_salirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jbBuscar">
+    <Component class="javax.swing.JButton" name="JB_buscar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Buscar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbBuscarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JB_buscarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jtfCodigo">
+    <Component class="javax.swing.JTextField" name="JTF_idmateria">
     </Component>
-    <Component class="javax.swing.JTextField" name="jtfNombreMateria">
+    <Component class="javax.swing.JTextField" name="JTF_nombre">
     </Component>
-    <Component class="javax.swing.JTextField" name="jtfAnio">
+    <Component class="javax.swing.JTextField" name="JTF_semestre">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Estado :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jrbEstado">
+    <Component class="javax.swing.JRadioButton" name="JRB_estado">
       <Properties>
         <Property name="text" type="java.lang.String" value="Activar"/>
       </Properties>

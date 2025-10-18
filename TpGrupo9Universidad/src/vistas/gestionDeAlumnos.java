@@ -16,8 +16,8 @@ import persistencia.AlumnoData;
  * @author Humberto
  */
 public class gestionDeAlumnos extends javax.swing.JFrame {
-   Menu_principal menu =new Menu_principal();
-   AlumnoData alumnoData = new AlumnoData(menu.conexionDb());
+    private Menu_principal menu =new Menu_principal();
+    private AlumnoData alumnoData = new AlumnoData(menu.conexionDb());
     public gestionDeAlumnos() {
         initComponents();
         setLocationRelativeTo(null);
@@ -99,7 +99,7 @@ public class gestionDeAlumnos extends javax.swing.JFrame {
             }
         });
 
-        JB_salir.setText("Volver");
+        JB_salir.setText("Salir");
         JB_salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JB_salirActionPerformed(evt);
@@ -110,10 +110,6 @@ public class gestionDeAlumnos extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(226, 226, 226)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(80, 80, 80)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,15 +141,19 @@ public class gestionDeAlumnos extends javax.swing.JFrame {
                     .addComponent(JB_buscar)
                     .addComponent(JB_salir))
                 .addGap(48, 48, 48))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(207, 207, 207))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
+                .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(35, 35, 35)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(TF_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -348,7 +348,7 @@ public class gestionDeAlumnos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 
- private void limpiar() {
+    private void limpiar() {
         // borra los datos de los textField
         RB_activo.setSelected(false);
         TF_apellido.setText("");

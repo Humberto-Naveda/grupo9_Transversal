@@ -39,7 +39,7 @@ public class AlumnoData {
             }
             
             ps.close();
-            System.out.println("alumno ingresado perfectamente"); 
+            JOptionPane.showMessageDialog(null, "Alumno cargado con exito","INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog( null,"Error al ingresar alumno " + ex.getMessage(),"ERROR_MESSAGE",JOptionPane.ERROR_MESSAGE );
         
@@ -62,7 +62,7 @@ public class AlumnoData {
             
             ps.close();
             
-             System.out.println("Alumno actualizado");
+            JOptionPane.showMessageDialog(null, "Alumno actualizado con exito","INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog( null,"Error al actualizar alumno " + ex.getMessage(),"ERROR_MESSAGE",JOptionPane.ERROR_MESSAGE );
         }
@@ -78,7 +78,8 @@ public class AlumnoData {
 
             ps.executeUpdate();
             ps.close();  
-
+            
+            JOptionPane.showMessageDialog(null, "Alumno eliminado con exito","INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog( null,"Error al eliminar alumno " + ex.getMessage(),"ERROR_MESSAGE",JOptionPane.ERROR_MESSAGE ); 
         }
@@ -86,7 +87,7 @@ public class AlumnoData {
     }
      
     public Alumno buscarAlumnoPorId(int id) {
-        String sql = "SELECT dni,apellido,nombre,fecha_nacimiento,estado FROM alumno WHERE idAlumno = ? ";
+        String sql = "SELECT dni,apellido,nombre,fecha_nacimiento,estado FROM alumno WHERE id_alumno = ? ";
         Alumno alumno = null;
 
         try {
@@ -113,7 +114,7 @@ public class AlumnoData {
     }
     
      public Alumno buscarAlumnoPorDNI(int dni) {
-        String sql = "SELECT id_Alumno,apellido,nombre,fecha_nacimiento,estado FROM alumno WHERE dni = ? ";
+        String sql = "SELECT id_alumno,apellido,nombre,fecha_nacimiento,estado FROM alumno WHERE dni = ? ";
         Alumno alumno = null;
 
         try {
@@ -122,7 +123,7 @@ public class AlumnoData {
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 alumno = new Alumno();
-                alumno.setIdAlumno(rs.getInt("id_Alumno"));
+                alumno.setIdAlumno(rs.getInt("id_alumno"));
                 alumno.setDni(dni);
                 alumno.setApellido(rs.getString("apellido"));
                 alumno.setNombre(rs.getString("nombre"));
@@ -140,7 +141,7 @@ public class AlumnoData {
     }
      
      public List<Alumno> listarAlumnos() {
-        String sql = "SELECT id_Alumno,dni,apellido,nombre,fecha_nacimiento FROM alumno WHERE estado = 1";
+        String sql = "SELECT id_alumno,dni,apellido,nombre,fecha_nacimiento FROM alumno WHERE estado = 1";
         ArrayList<Alumno> alumnos = new ArrayList<>();
 
         try {
@@ -149,7 +150,7 @@ public class AlumnoData {
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Alumno alumno = new Alumno();
-                alumno.setIdAlumno(rs.getInt("id_Alumno"));
+                alumno.setIdAlumno(rs.getInt("id_alumno"));
                 alumno.setDni(rs.getInt("dni"));
                 alumno.setApellido(rs.getString("apellido"));
                 alumno.setNombre(rs.getString("nombre"));

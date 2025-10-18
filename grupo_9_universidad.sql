@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-10-2025 a las 01:12:43
+-- Tiempo de generación: 18-10-2025 a las 04:26:37
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -58,12 +58,23 @@ INSERT INTO `alumno` (`id_alumno`, `dni`, `nombre`, `apellido`, `fecha_nacimient
 
 CREATE TABLE `inscripcion` (
   `id_inscripcion` int(11) NOT NULL,
-  `nota` int(11) NOT NULL,
+  `nota` double DEFAULT NULL,
   `año` int(11) NOT NULL,
   `id_alumno` int(11) NOT NULL,
   `id_materia` int(11) NOT NULL,
   `estado` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `inscripcion`
+--
+
+INSERT INTO `inscripcion` (`id_inscripcion`, `nota`, `año`, `id_alumno`, `id_materia`, `estado`) VALUES
+(1, 10, 2025, 1, 1, 1),
+(2, 7.5, 2024, 1, 2, 1),
+(3, 6.8, 2023, 1, 3, 1),
+(4, 8, 2022, 1, 4, 1),
+(5, 4, 2025, 1, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -126,7 +137,7 @@ ALTER TABLE `alumno`
 -- AUTO_INCREMENT de la tabla `inscripcion`
 --
 ALTER TABLE `inscripcion`
-  MODIFY `id_inscripcion` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_inscripcion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `materia`

@@ -3,35 +3,41 @@ package entidades;
 
 
 public class Inscripcion {
-    private int idInscripcion;
-    private Alumno alumno;
+    private int idInscripcion; 
+    private Alumno alumno; 
     private Materia materia;
-    private double nota;
-    private int anio;
+    private double nota; // DOUBLE
+    private int anio; // "año" en la base de datos INT
+    private boolean estado;
     
     public Inscripcion(){
         alumno = new Alumno();
         materia = new Materia();
     }
 
-    public Inscripcion(int idInscripcion, Alumno alumno, Materia materia, double nota, int anio) {
+    public Inscripcion(int idInscripcion, Alumno alumno, Materia materia, double nota, int anio,boolean estado) {
         this.idInscripcion = idInscripcion;
         this.alumno = alumno;
         this.materia = materia;
         this.nota = nota;
         this.anio = anio;
+        this.estado = estado;
     }
 
-    public Inscripcion(Alumno alumno, Materia materia, double nota, int anio) {
+    public Inscripcion(Alumno alumno, Materia materia, int anio, boolean estado) {
         this.alumno = alumno;
         this.materia = materia;
-        this.nota = nota;
         this.anio = anio;
+        this.estado = estado;
     }
 
-   public Inscripcion(double nota){
-       this.nota = nota;
-   }
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
 
     public int getIdInscripcion() {
         return idInscripcion;
@@ -75,8 +81,10 @@ public class Inscripcion {
 
     @Override
     public String toString() {
-        return "Inscripcion{" + "idInscripcion=" + idInscripcion + ", alumno=" + alumno + ", materia=" + materia + ", nota=" + nota + ", anio=" + anio + '}';
+        return "Inscripcion{" + "idInscripcion=" + idInscripcion + ", alumno=" + alumno + ", materia=" + materia + ", nota=" + nota + ", anio=" + anio + ", estado=" + estado + '}';
     }
+
+  
    
  
 }

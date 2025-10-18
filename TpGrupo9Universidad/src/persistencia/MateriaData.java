@@ -62,7 +62,7 @@ public class MateriaData {
             }else{
                 JOptionPane.showMessageDialog( null,"Error al medeficar la materia ","ERROR_MESSAGE",JOptionPane.ERROR_MESSAGE );
             }
-            ps.close();  // se lo pusimos por si acaso
+            ps.close();  
 
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog( null,"Error al acceder a la base de datos " + ex.getMessage(),"ERROR_MESSAGE",JOptionPane.ERROR_MESSAGE );

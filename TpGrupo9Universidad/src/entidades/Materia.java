@@ -2,12 +2,13 @@
 package entidades;
 
 public class Materia {
-    private int idMateria;
-   private String nombre;
-   private int anio;
+   private int idMateria;
+   private String nombre;// VACHAR
+   private int anio; // "semestre" en la base de datos INT
    private boolean estado;
    
-   public Materia(){}
+   public Materia(){
+   }
 
     public Materia(int idMateria, String nombre, int anio, boolean estado) {
         this.idMateria = idMateria;
@@ -56,6 +57,6 @@ public class Materia {
 
     @Override
     public String toString() {
-        return "Materia{" + "idMateria=" + idMateria + ", nombre=" + nombre + ", anioMateria=" + anio + '}';
+        return this.nombre;
     }
 }
